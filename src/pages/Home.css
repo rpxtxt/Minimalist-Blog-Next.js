@@ -1,0 +1,74 @@
+/* src/pages/Home.css */
+
+.home-container {
+  max-width: 800px; /* Lebar maksimum untuk konten */
+  margin: 0 auto; /* Pusatkan konten */
+  padding: 40px 20px; /* Padding untuk konten */
+  font-family: 'Arial', sans-serif; /* Font */
+  background-color: #ffffff; /* Warna latar belakang putih */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut untuk kontainer */
+  border-radius: 8px; /* Sudut melingkar */
+}
+
+.home-title {
+  text-align: center; /* Pusatkan judul */
+  font-size: 2.5rem; /* Ukuran font untuk judul */
+  margin-bottom: 10px; /* Margin bawah */
+  color: #333; /* Warna judul */
+}
+
+.home-subtitle {
+  text-align: center; /* Pusatkan subtitle */
+  font-size: 1.5rem; /* Ukuran font untuk subtitle */
+  color: #666; /* Warna untuk subtitle */
+  margin-bottom: 40px; /* Margin bawah */
+}
+
+.article-list {
+  display: flex; /* Menggunakan flexbox untuk tata letak */
+  flex-direction: column; /* Menyusun artikel dalam kolom */
+}
+
+.article-card {
+  background: #ffffff; /* Warna latar belakang kartu */
+  border: 1px solid #e1e1e1; /* Garis border yang lembut */
+  border-radius: 8px; /* Sudut melingkar */
+  padding: 20px; /* Padding di dalam kartu */
+  margin-bottom: 20px; /* Margin bawah untuk jarak antar kartu */
+  transition: box-shadow 0.3s, transform 0.3s; /* Transisi saat hover */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Bayangan lembut */
+}
+
+.article-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Bayangan lebih jelas saat hover */
+  transform: translateY(-2px); /* Efek mengangkat saat hover */
+}
+
+.article-link {
+  text-decoration: none; /* Hilangkan garis bawah */
+  color: #333; /* Warna teks */
+}
+
+.article-link h3 {
+  font-size: 1.6rem; /* Ukuran font untuk judul artikel */
+  margin: 0; /* Hilangkan margin */
+  color: #222; /* Warna judul */
+}
+
+.article-excerpt {
+  font-size: 1rem; /* Ukuran font untuk deskripsi singkat */
+  color: #555; /* Warna untuk deskripsi */
+  margin: 10px 0; /* Margin atas dan bawah */
+  line-height: 1.6; /* Tinggi garis untuk keterbacaan yang lebih baik */
+  max-height: 60px; /* Batasi tinggi maksimum untuk cuplikan */
+  overflow: hidden; /* Sembunyikan teks yang lebih dari batas */
+  text-overflow: ellipsis; /* Tambahkan ellipsis jika teks terlalu panjang */
+}
+
+.article-meta {
+  display: flex; /* Menggunakan flexbox untuk meta */
+  justify-content: space-between; /* Jarak antar elemen */
+  font-size: 0.9rem; /* Ukuran font untuk meta */
+  color: #888; /* Warna untuk teks tambahan */
+  margin-top: 10px; /* Margin atas */
+}
