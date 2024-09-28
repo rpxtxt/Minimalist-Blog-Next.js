@@ -3,7 +3,7 @@ title: "How to Install TypeScript"
 date: "2024-08-22"
 ---
 
-# How to Install TypeScript
+## How to Install TypeScript
 
 TypeScript is a superset of JavaScript that adds static typing, making it easier to catch errors early and improve code quality. This guide will help you install TypeScript on your system.
 

@@ -1,7 +1,10 @@
-/* src/App.css */
+/* src/styles/app.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Gaya kustom di bawah ini */
 .App {
-  max-width: 800px; /* Lebar maksimum */
-  margin: 0 auto; /* Pusatkan konten */
-  padding: 20px; /* Padding */
-  font-family: Arial, sans-serif; /* Font */
+  min-height: 100vh; /* Pastikan aplikasi mengambil tinggi penuh */
+  background-color: #f9fafb; /* Warna latar belakang */
 }

@@ -3,7 +3,6 @@ import React, { useEffect } from 'react';
 import { marked } from 'marked';
 import Prism from 'prismjs';
 import 'prismjs/themes/prism.css'; // CSS untuk Prism.js
-import './MarkdownRenderer.css'; // Styling tambahan jika diperlukan
 
 const MarkdownRenderer = ({ content }) => {
   const renderMarkdown = (markdown) => {
@@ -15,7 +14,9 @@ const MarkdownRenderer = ({ content }) => {
   }, [content]);
 
   return (
-    <div className="markdown-body" dangerouslySetInnerHTML={renderMarkdown(content)} />
+    <div className="prose prose-sm lg:prose-base mx-auto mt-4"> {/* Mengubah ukuran font */}
+      <div dangerouslySetInnerHTML={renderMarkdown(content)} />
+    </div>
   );
 };
 

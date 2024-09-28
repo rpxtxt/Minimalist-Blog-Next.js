@@ -1,8 +1,7 @@
 // src/pages/ArticleDetail.js
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import MarkdownRenderer from '../components/MarkdownRenderer';
-import './ArticleDetail.css'; // Import CSS untuk styling
 
 const ArticleDetail = () => {
   const { slug } = useParams(); // Mendapatkan slug dari URL
@@ -43,13 +42,15 @@ const ArticleDetail = () => {
   }, [slug]);
 
   return (
-    <div className="article-detail-container">
-      <h1 className="article-title">{title}</h1> {/* Tampilkan judul dari metadata */}
-      <div className="article-meta">
-        <span className="article-author">crycapital</span>
-        <span className="article-date">9 min read • {date}</span> {/* Tanggal otomatis */}
+    <div className="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-lg mt-10">
+      <h1 className="text-4xl font-extrabold mb-4">{title}</h1>
+      <div className="flex justify-between text-sm text-gray-600 mb-4">
+        <Link to="/" className="text-blue-500 hover:underline">Back to All Posts</Link>
+        <span className="article-date">9 min read • {date}</span>
       </div>
-      {content && <MarkdownRenderer content={content} />}
+      <div className="mt-4"> {/* Margin atas untuk konten */}
+        {content && <MarkdownRenderer content={content} />}
+      </div>
     </div>
   );
 };
